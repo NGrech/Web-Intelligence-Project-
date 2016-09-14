@@ -1,0 +1,59 @@
+
+<ruleset>
+    <rule name="PersonalName">
+        <elementType>div</elementType>
+        <elementId>personalName</elementId>
+        <action type="1">
+            <rule>
+            <elementType offset="0">h2</elementType>
+                <elementId></elementId>
+                <action type="0" key="Personal Name">
+                </action> 
+            </rule>
+        </action>
+    </rule>
+    <rule name="faculty">
+        <elementType>div</elementType>
+        <elementId>personalDetails</elementId>
+        <action type="1">
+            <rule>
+            <elementType offset="1">div</elementType>
+                <elementId></elementId>
+                <action type="1">
+                    <rule>
+                    <elementType offset="3">span</elementType>
+                        <elementId></elementId>
+                        <action type="0" key="Faculty">
+                        </action> 
+                    </rule>
+                </action> 
+            </rule>
+        </action>
+    </rule> 
+    <rule name="qualifications">
+        <elementType>div</elementType>
+        <elementId>personalDetails</elementId>
+        <action type="1">
+            <rule>
+            <elementType offset="1">div</elementType>
+                <elementId></elementId>
+                <action type="1">
+                    <rule>
+                    <elementType offset="0">span</elementType>
+                        <elementId></elementId>
+                        <action type="0" key="Qualifications">
+                        </action> 
+                    </rule>
+                </action> 
+            </rule>
+        </action>
+    </rule>
+    <rule name="publications">
+        <elementType>div</elementType>
+        <elementId>researchTab</elementId>  
+        <action type="2" key="Publications">
+            <elementType>p</elementType>
+            <filter>([A-Za-z]+,\s([A-Z].)+)</filter>
+        </action>
+    </rule>
+</ruleset>
